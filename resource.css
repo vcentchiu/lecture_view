@@ -1,0 +1,216 @@
+body {
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+.light-grey-fill {
+	background: #F8F8F8;
+}
+
+.border-bottom {
+	border-bottom-color: #f4f4f4;
+	border-bottom-style: solid;
+	border-bottom-width: 1px; 
+}
+
+.white {
+	-webkit-filter: brightness(0) invert(1);
+	filter: brightness(0) invert(1);
+}
+
+
+
+/***************************************************/
+/* Main Containers */
+/***************************************************/
+
+#header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+	height: 50px;
+	z-index: 100;
+	background: white;
+}
+
+#main {
+	text-align: center;
+	margin-top: 50px;
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 50px);	
+	
+}
+
+#resource-container {
+	position: relative;
+	display: inline-block;
+	/*right: 0;*/
+	height: 100%;
+	/*width: 100%;*/
+	text-align: center;
+	margin: 0 auto;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+
+#resource {
+	position: relative;
+	border: gray;
+	/*margin: 0 auto;*/
+	/*width: 100%;*/
+
+
+}
+
+
+
+#resource { 
+	/*z-index: 90;*/
+	/*position: absolute;*/
+}
+
+.highlight-toggle {
+
+}
+
+/***************************************************/
+/* Left Nav */
+/***************************************************/
+
+#left-nav {
+	position: fixed;
+	left: 0;
+	width: 15px;
+	height: 100%;
+	z-index: 100;
+	text-align: left;
+}
+
+#nav-close {
+	padding-right: 5px;
+	float: right;
+	color: purple;
+	cursor: pointer;
+}
+
+#nav-top {
+	width: 100%;
+	height: 40px;
+}
+
+#discussion-container {
+	width: 100%;
+	height: 100%;
+	font-size: 10px;
+}
+
+.q-container {
+	max-width: 100%;
+	height: 80px;
+	padding: 5px 20px;
+	background-color: #dbdbdb;
+	overflow:hidden;
+}
+
+.q-container:hover {
+	background-color: #9b9b9b;
+}
+
+.q-title {
+	padding: 4px 0px;
+}
+
+.q-title-inner {
+	display: inline-block;
+	max-width: 70%;
+	float: left;
+	overflow: hidden;
+	font-size: 12px;
+	font-weight: bold;
+
+}
+.q-title-date {
+	display: inline-block;
+	max-width: 50%;
+	overflow: hidden;
+	float: right;
+}
+
+.q-content {
+	max-width: 100%;
+	float: left;
+	overflow: hidden;
+}
+
+.q-content-inner {
+	max-width: 80%;
+	overflow: hidden;
+}
+
+/***************************************************/
+/* PDF Tools */
+/***************************************************/
+
+.highlight {
+	/*background-color: #1F2041;*/
+}
+
+.marker {
+
+}
+
+.tools-menu {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	background: #1F2041;
+	border-radius: 4px;
+	padding: 2 0;
+	box-shadow: 0 1px 15px rgba(0,0,0,0.12), 0 1px 5px rgba(0,0,0,0.24);
+	text-align: center;
+	vertical-align: middle;
+	opacity: .85;
+	z-index: 100;
+}
+
+.tools-button {
+	display: inline-block;
+	vertical-align: top;
+	/*text-align: center;*/
+	width: 15px;
+	height: 100%;
+	margin: auto 2;
+	z-index: 99;
+}
+
+.tools-divider {
+	display: inline-block;
+	width: 2px;
+	height: 100%;
+	background: white;
+	margin: 0 5;
+	border-radius: 20px;
+	opacity: .6;
+}
+
+.tools-icon {
+	vertical-align: middle;
+	width: 100%;
+	padding-top: calc((26px - 15px)/2);
+	/*height: auto;*/
+	color: white;
+	/*margin: auto 0;*/
+}
+
+.tools-highlight {
+	color: white;
+	/*background-image: url(highlight.png);*/
+}
+
+.tools-comment {
+	color: white;
+	/*background-image: url(comment.png);*/
+}
+
+.text {}

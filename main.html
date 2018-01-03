@@ -1,0 +1,121 @@
+<!doctype html5>
+<html>
+<head> 
+	<title> resource page </title>
+    <link rel="stylesheet" href="resource.css" type="text/css"> </link>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> </link>
+    <link rel="stylesheet" href="text_layer_builder.css" type="text/css"> </link>
+
+
+    <!-- pdf.js -->
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.worker.js"> </script>
+    
+    <script type="text/javascript" src="text_layer_builder.js" type="text/javascript"></script>
+    
+    <!-- velocity.js -->
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdn.jsdelivr.net/velocity/1.1.0/velocity.min.js"></script>
+
+
+
+    <script src="loadpdf.js"> </script>
+
+    <script src="annotate.js"> </script>
+
+    <script src="leftNav.js"> </script>
+
+    
+
+
+    <!-- 
+      <script src="pdf-annotate.js/index.js" type="text/javascript"></script>
+    <script src="simpleviewer.js"> </script>
+    
+    -->
+    
+
+  
+
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- velocity -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+    
+</head>
+
+
+<body>
+    <div id="header" class="border-bottom list-container-flat"> 
+        <div id="logo"> </div>
+    </div>
+    <div id="main">
+        <div id="left-nav" class="light-grey-fill"> 
+            <div id="nav-top"> 
+                <div id="search"> </div>
+                <div id="add-comment"> </div>
+            </div>
+            <div id="discussion-container"> 
+                <div class="q-container" id="{{ id }}">
+                    <div>
+                        <div class="q-title-inner q-title"> test title </div>
+                        <div class="q-title-date q-title"> 1/1/18 </div>
+                    </div>
+                    <div class="q-content">
+                        <div class="q-content-inner"> blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+                            blah blah blah blahblah blahblah blahblah blah 
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="resource-container">
+            <div id="resource"></div>
+        </div>
+    </div> 
+</body>`
+
+
+<!-- mustache search result template -->
+<script type="mustache/x-tmpl" id="comment-new">
+    {{ #results }}
+    <div class="comment-container" id="{{ id }}">
+        <div class="title">
+            <div class="title-inner"> {{ title }} </div>
+            <div class="title-date"> {{ date }} </div>
+        </div>
+        <div class="content">
+            <div class="content-inner"> {{ body }}</div>
+        </div>
+    </div>
+    {{ /results }}
+</script>
+
+<!-- mustache queue template -->
+<script type="mustache/x-tmpl" id="queue-template">
+    <div class="queue-item"> 
+        <div class="options"> </div> 
+    </div>
+</script>
+
+
+
+
+
+
+
+</html>
